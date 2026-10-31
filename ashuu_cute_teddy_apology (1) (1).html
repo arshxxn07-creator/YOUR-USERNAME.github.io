@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffe8ef">
+<title>For Ashuu ♡ A Little Sorry</title>
+<style>
+:root{--rose:#d86f91;--deep:#a9476b;--cream:#fffaf8;--ink:#704654}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;overflow-x:hidden;background:radial-gradient(circle at 50% 10%,#fff 0,#fff1f4 40%,#fbdce6 100%);font-family:Georgia,serif;color:var(--ink)}
+.bg-hearts span{position:fixed;z-index:0;bottom:-40px;color:#e7a0b4;opacity:.55;animation:floatUp linear infinite;pointer-events:none}
+@keyframes floatUp{to{transform:translateY(-115vh) rotate(35deg);opacity:0}}
+.page{position:relative;z-index:1;max-width:1000px;margin:auto;padding:30px 18px 55px;text-align:center}
+.kicker{font:700 11px Arial,sans-serif;letter-spacing:.28em;color:#b66a82;text-transform:uppercase;margin:12px 0}
+h1{font-size:clamp(42px,8vw,76px);font-weight:500;line-height:1.02;color:#a94f70;margin:10px 0}
+.subtitle{font:14px Arial,sans-serif;letter-spacing:.12em;color:#b47b8b}
+.stage{display:grid;grid-template-columns: minmax(105px,1fr) minmax(280px,610px) minmax(105px,1fr);gap:clamp(4px,2vw,22px);align-items:center;margin:28px auto 0}
+.letter{position:relative;padding:clamp(25px,5vw,52px);border:1px solid #f2c5d2;border-radius:30px;background:linear-gradient(145deg,rgba(255,255,255,.97),rgba(255,244,247,.96));box-shadow:0 22px 65px #a64d6e24, inset 0 0 0 7px #fff8fa;overflow:hidden}
+.letter:before{content:"";position:absolute;inset:13px;border:1px dashed #e9b4c3;border-radius:21px;pointer-events:none}
+.top-heart{font-size:38px;color:#d77996;line-height:1}
+.to{font:700 12px Arial,sans-serif;letter-spacing:.22em;color:#b66b83;margin:12px 0}
+h2{font-size:clamp(31px,5vw,48px);font-weight:500;color:#a94f70;margin:6px 0 16px}
+.flourish{color:#d98ca4;font-size:22px;margin:10px}
+.copy{position:relative;z-index:1;max-width:520px;margin:auto;font-size:clamp(16px,2.1vw,19px);line-height:1.85}
+.copy p{margin:13px 0}
+.promise{position:relative;z-index:1;margin:23px auto 0;padding:16px 19px;max-width:490px;background:#fff0f4;border-radius:18px;font:14px/1.75 Arial,sans-serif;color:#895365;border:1px solid #f7d9e1}
+.sign{position:relative;z-index:1;font-size:24px;font-style:italic;color:#a94f70;margin:22px 0 4px}
+button{position:relative;z-index:2;margin:17px 5px 0;padding:13px 21px;border:0;border-radius:50px;background:linear-gradient(135deg,#d9829d,#b95176);color:#fff;font:700 13px Arial,sans-serif;cursor:pointer;box-shadow:0 9px 20px #b9517630;transition:.2s}
+button:hover{transform:translateY(-3px);filter:brightness(1.04)}
+#surprise{display:none;position:relative;z-index:2;margin:16px auto 0;max-width:440px;padding:16px;border-radius:16px;background:#fff;color:#a14d6d;font-size:17px;line-height:1.65;box-shadow:0 8px 25px #b9517617}
+.teddy{width:clamp(95px,14vw,150px);height:190px;position:relative;margin:auto;filter:drop-shadow(0 14px 10px #9d53602b);animation:bob 3s ease-in-out infinite;transform-style:preserve-3d}
+.teddy.right{animation-delay:1s}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-9px) rotate(2deg)}}
+.ear{position:absolute;top:15px;width:48px;height:48px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e9c39e,#ad7958 78%);box-shadow:inset -5px -6px 9px #80553c66,inset 3px 3px 7px #fff8}
+.ear:after{content:"";position:absolute;inset:11px;border-radius:50%;background:#d99e9d}
+.ear.l{left:15px}.ear.r{right:15px}
+.head{position:absolute;top:28px;left:50%;transform:translateX(-50%);width:105px;height:95px;border-radius:48% 48% 45% 45%;background:radial-gradient(ellipse at 35% 23%,#f5dfc5,#c49a75 60%,#936849);box-shadow:inset -8px -9px 13px #79543d55,inset 5px 5px 10px #fff8}
+.eye{position:absolute;top:39px;width:7px;height:9px;border-radius:50%;background:#49312b;box-shadow:0 1px 2px #fff}
+.eye.l{left:30px}.eye.r{right:30px}
+.muzzle{position:absolute;left:50%;top:52px;transform:translateX(-50%);width:40px;height:28px;border-radius:50%;background:radial-gradient(circle at 35% 25%,#fff0dc,#d8b99d);box-shadow:inset 0 -3px 5px #a77a5c44}
+.nose{position:absolute;top:6px;left:50%;transform:translateX(-50%);width:10px;height:7px;border-radius:50% 50% 55% 55%;background:#68413e}
+.smile{position:absolute;top:13px;left:50%;width:12px;height:7px;border-bottom:1.5px solid #68413e;border-radius:50%;transform:translateX(-50%)}
+.bodybear{position:absolute;top:112px;left:50%;transform:translateX(-50%);width:90px;height:76px;border-radius:43% 43% 35% 35%;background:radial-gradient(ellipse at 35% 20%,#efd5b5,#b48764 72%,#8d644b);box-shadow:inset -7px -7px 10px #79543d44}
+.belly{position:absolute;left:50%;top:20px;transform:translateX(-50%);width:43px;height:42px;border-radius:50%;background:radial-gradient(circle at 35% 25%,#fff0db,#d8b99d)}
+.arm{position:absolute;top:122px;width:32px;height:53px;border-radius:22px;background:linear-gradient(90deg,#a97a59,#e2c09e,#a97a59)}
+.arm.l{left:1px;transform:rotate(28deg)}.arm.r{right:1px;transform:rotate(-28deg)}
+.heartprop{position:absolute;top:130px;left:50%;transform:translateX(-50%);font-size:24px;filter:drop-shadow(0 2px 2px #8b3d5844)}
+.caption{font:11px Arial,sans-serif;letter-spacing:.1em;color:#ad7183;margin-top:2px}
+.footer{font:12px Arial,sans-serif;color:#ae7d8b;margin:25px 0}
+@media(max-width:620px){.stage{grid-template-columns:1fr 1fr;gap:0}.letter{grid-column:1/-1;grid-row:1;margin-bottom:8px}.teddy{height:150px;transform:scale(.82);margin-top:-5px}.teddy.left{grid-column:1}.teddy.right{grid-column:2}.caption{margin-top:-15px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="bg-hearts" aria-hidden="true">
+<span style="left:7%;animation-duration:13s;font-size:22px">♡</span>
+<span style="left:19%;animation-duration:17s;animation-delay:3s;font-size:15px">✿</span>
+<span style="left:39%;animation-duration:15s;animation-delay:1s;font-size:20px">♥</span>
+<span style="left:68%;animation-duration:19s;animation-delay:4s;font-size:17px">♡</span>
+<span style="left:88%;animation-duration:14s;animation-delay:2s;font-size:24px">✿</span>
+</div>
+<main class="page">
+  <div class="kicker">A tiny letter, with a very big apology</div>
+  <h1>For Ashuu ♡</h1>
+  <div class="subtitle">A LITTLE CORNER MADE JUST FOR YOU</div>
+
+  <section class="stage">
+    <div>
+      <div class="teddy left" aria-label="Cute 3D-style teddy bear holding a heart">
+        <div class="ear l"></div><div class="ear r"></div>
+        <div class="head"><i class="eye l"></i><i class="eye r"></i><div class="muzzle"><i class="nose"></i><i class="smile"></i></div></div>
+        <div class="bodybear"><div class="belly"></div></div><div class="arm l"></div><div class="arm r"></div><div class="heartprop">💗</div>
+      </div><div class="caption">A LITTLE TEDDY FOR YOU</div>
+    </div>
+
+    <article class="letter">
+      <div class="top-heart">♡</div>
+      <div class="to">DEAR ASHUU</div>
+      <h2>I'm really sorry.</h2>
+      <div class="flourish">୨୧ ───── ♡ ───── ୨୧</div>
+      <div class="copy">
+        <p>I may not always find the perfect words, but I never want you to feel that your feelings don't matter.</p>
+        <p>If I hurt you, upset you, or made you feel unheard, I am truly sorry. You deserved patience, kindness, and understanding from me.</p>
+        <p>I don't want to cover things up with cute words or make excuses. I want to listen properly, understand what hurt you, and do better through my actions.</p>
+        <p>You don't have to forgive me instantly. Take the time and space you need. I just hope this little page reminds you that I care about making things right.</p>
+      </div>
+      <div class="promise"><strong>A little promise ♡</strong><br>
+        More listening. More honesty. More patience. And actions that match my words.
+      </div>
+      <div class="sign">With a heartfelt sorry,</div>
+      <div class="flourish">♡ ♡ ♡</div>
+      <button onclick="reveal()">Open your tiny surprise ✨</button>
+      <div id="surprise">Sending you the softest teddy-bear hug (only if you want one) 🧸💗<br>Thank you for reading my little letter, Ashuu.</div>
+    </article>
+
+    <div>
+      <div class="teddy right" aria-label="Cute 3D-style teddy bear holding a heart">
+        <div class="ear l"></div><div class="ear r"></div>
+        <div class="head"><i class="eye l"></i><i class="eye r"></i><div class="muzzle"><i class="nose"></i><i class="smile"></i></div></div>
+        <div class="bodybear"><div class="belly"></div></div><div class="arm l"></div><div class="arm r"></div><div class="heartprop">💞</div>
+      </div><div class="caption">AND ONE MORE ♡</div>
+    </div>
+  </section>
+  <div class="footer">Made with care, a little courage, and a sincere apology. ♡</div>
+</main>
+<script>
+function reveal(){
+ const n=document.getElementById('surprise');
+ n.style.display='block';
+ document.querySelector('button').textContent='A little surprise for Ashuu ♡';
+}
+</script>
+</body>
+</html>
